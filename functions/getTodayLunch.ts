@@ -21,7 +21,7 @@ const selectRestaurantFromList = (restaurantList: RestaurantItem[]) => {
   const index1 = Math.floor(Math.random() * finalList.length);
   let index2 = Math.floor(Math.random() * finalList.length);
 
-  while (index2 === index1) {
+  while (finalList[index1] === finalList[index2]) {
     index2 = Math.floor(Math.random() * finalList.length);
   }
 
