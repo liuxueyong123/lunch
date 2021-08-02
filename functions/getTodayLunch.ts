@@ -12,7 +12,7 @@ const maxLen = 8;
 const selectRestaurantFromList = (restaurantList: RestaurantItem[]) => {
   const finalList: string[] = [];
 
-  for (const item of restaurantList) {
+  for (const item of restaurantList.sort((x, y) => y.weight - x.weight)) {
     for (let i = 0; i < item.weight; i += 1) {
       finalList.push(item.restaurant);
     }
