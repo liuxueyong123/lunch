@@ -8,7 +8,7 @@
   "scripts": {
     "sync": "ts-node ./scripts/syncWeight.ts",
     "start": "ts-node ./scripts/getTodayLunch.ts",
-    "publish-online": "ssh root@106.15.170.172 \"cd ./application/lunch/; git pull; yarn; tsc; pm2 reload lunch\""
+    "push-online": "ssh root@106.15.170.172 \"cd ./application/lunch/; git pull; yarn; tsc; pm2 reload lunch\""
   },
   "dependencies": {
     "axios": "^0.21.1",
