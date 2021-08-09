@@ -73,7 +73,7 @@ const getTodayLunch = async () => {
     const fields = ['restaurant', 'weight'];
     const opts = { fields };
     const parser = new Parser(opts);
-    const newRestaurantList = reduceWeight(restaurantList, recommendRestaurantList, 0.8);
+    const newRestaurantList = reduceWeight(restaurantList, recommendRestaurantList, 0.6);
     const newRestaurantListCSV = parser.parse(newRestaurantList);
 
     fs.outputFileSync('./data/weight_week.csv', newRestaurantListCSV);
