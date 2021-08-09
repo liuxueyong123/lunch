@@ -2,7 +2,7 @@ import schedule from 'node-schedule';
 import getTodayLunch from './functions/getTodayLunch';
 import syncWeight from './functions/syncWeight';
 
-schedule.scheduleJob('00 50 11 * * 2-6', () => {
+schedule.scheduleJob('00 50 11 * * 1-5', () => {
   getTodayLunch();
 });
 
