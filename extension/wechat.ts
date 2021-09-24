@@ -44,3 +44,23 @@ export const sendArticleToWechat = async (
     },
   });
 };
+
+export const sendImageToWechat = async (
+  base64: string,
+  md5: string,
+) => {
+  await axios.request({
+    method: 'POST',
+    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6f251d40-511f-439e-b6cb-d704b1078b8b',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: {
+      msgtype: 'image',
+      image: {
+        base64: base64.replace(/\r|\n/g, ''),
+        md5,
+      },
+    },
+  });
+};
