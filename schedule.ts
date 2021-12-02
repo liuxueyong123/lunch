@@ -2,6 +2,11 @@ import schedule from 'node-schedule';
 import getTodayLunch from './functions/getTodayLunch';
 import syncWeight from './functions/syncWeight';
 import fruitNotice from './functions/fruitNotice';
+import waimaiNotice from './functions/waimai';
+
+schedule.scheduleJob('00 20 11 * * 1-5', () => {
+  waimaiNotice();
+});
 
 schedule.scheduleJob('00 50 11 * * 1-5', () => {
   getTodayLunch();
