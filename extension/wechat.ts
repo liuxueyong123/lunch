@@ -3,7 +3,7 @@ import axios from 'axios';
 export const sendMessageToWechat = async (message: string) => {
   await axios.request({
     method: 'POST',
-    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6f251d40-511f-439e-b6cb-d704b1078b8b',
+    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1c0a5531-31d4-4d4b-86f2-eabd43924bcf',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -25,7 +25,7 @@ export const sendArticleToWechat = async (
 ) => {
   await axios.request({
     method: 'POST',
-    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6f251d40-511f-439e-b6cb-d704b1078b8b',
+    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1c0a5531-31d4-4d4b-86f2-eabd43924bcf',
     headers: {
       'Content-Type': 'application/json',
     },
@@ -51,7 +51,7 @@ export const sendImageToWechat = async (
 ) => {
   await axios.request({
     method: 'POST',
-    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=6f251d40-511f-439e-b6cb-d704b1078b8b',
+    url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=1c0a5531-31d4-4d4b-86f2-eabd43924bcf',
     headers: {
       'Content-Type': 'application/json',
     },
