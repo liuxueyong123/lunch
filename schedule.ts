@@ -6,7 +6,7 @@ import waimaiNotice from './functions/waimai';
 import runNotice from './functions/runNotice';
 // import afternoonTeaNotice from './functions/afternoonTeaNotice';
 
-schedule.scheduleJob('00 20 11 * * 1-5', () => {
+schedule.scheduleJob('00 10 11 * * 1-5', () => {
   waimaiNotice();
 });
 
