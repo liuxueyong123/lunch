@@ -14,7 +14,7 @@ schedule.scheduleJob('00 10 11 * * 1-5', () => {
 //   getTodayLunch();
 // });
 
-schedule.scheduleJob('00 32 14 * * 1-5', () => {
+schedule.scheduleJob('00 20 14 * * 1-5', () => {
   fruitNotice();
 });
 
