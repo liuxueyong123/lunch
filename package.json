@@ -10,8 +10,11 @@
     "start": "ts-node ./scripts/getTodayLunch.ts",
     "fruit": "ts-node ./scripts/fruitNotice.ts",
     "run-home": "ts-node ./scripts/runNotice.ts",
-    "tea": "ts-node ./scripts/afternoonTeaNotice.ts",
+    "agora-tea": "ts-node ./scripts/afternoonTeaNotice.ts",
     "waimai": "ts-node ./scripts/waimai.ts",
+    "lunch": "ts-node ./scripts/feishuLunch.ts",
+    "tea": "ts-node ./scripts/feishuTea.ts",
+    "dinner": "ts-node ./scripts/feishuDinner.ts",
     "push-online": "ssh root@106.15.170.172 \"cd ./application/lunch/; git pull; yarn; tsc; pm2 reload lunch\""
   },
   "dependencies": {
