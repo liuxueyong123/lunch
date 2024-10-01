@@ -1,14 +1,14 @@
 import schedule from 'node-schedule';
 // import getTodayLunch from './functions/getTodayLunch';
 // import syncWeight from './functions/syncWeight';
-import fruitNotice from './functions/fruitNotice';
-import waimaiNotice from './functions/waimai';
-import runNotice from './functions/runNotice';
-import { afternoonTeaNotice, dinnerNotice, lunchNotice } from './functions/feishuNotice';
+// import fruitNotice from './functions/fruitNotice';
+// import waimaiNotice from './functions/waimai';
+// import runNotice from './functions/runNotice';
+// import { afternoonTeaNotice, dinnerNotice, lunchNotice } from './functions/feishuNotice';
 // import afternoonTeaNotice from './functions/afternoonTeaNotice';
 
 schedule.scheduleJob('00 15 11 * * 1-5', () => {
-  waimaiNotice();
+  // waimaiNotice();
 });
 
 // schedule.scheduleJob('00 50 11 * * 1-5', () => {
@@ -16,11 +16,11 @@ schedule.scheduleJob('00 15 11 * * 1-5', () => {
 // });
 
 schedule.scheduleJob('00 30 14 * * 2,5', () => {
-  fruitNotice();
+  // fruitNotice();
 });
 
 schedule.scheduleJob('00 30 18 * * 1-5', () => {
-  runNotice();
+  // runNotice();
 });
 
 // schedule.scheduleJob('00 00 15 31 12 *', () => {
