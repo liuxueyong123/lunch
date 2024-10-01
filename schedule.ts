@@ -32,13 +32,13 @@ schedule.scheduleJob('00 30 18 * * 1-5', () => {
 // });
 
 schedule.scheduleJob('00 59 11 * * 1-5', () => {
-  lunchNotice();
+  // lunchNotice();
 });
 
 schedule.scheduleJob('00 00 15 * * 1-5', () => {
-  afternoonTeaNotice();
+  // afternoonTeaNotice();
 });
 
 schedule.scheduleJob('00 59 17 * * 1-5', () => {
-  dinnerNotice();
+  // dinnerNotice();
 });
